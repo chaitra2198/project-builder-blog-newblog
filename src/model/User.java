@@ -1,20 +1,18 @@
 package model;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public class User {
 
+//user class
+public class User 
+{
 
+//arguments
 	private String email;
 	private String password;
 	private LocalDateTime date;
-	public User(String email, String password,LocalDateTime date) {
-		this.email = email;
-		this.password = password;
-		this.date = date;
-	}
-
+	
+//getter and setter
 	public String getEmail() {
 		return email;
 	}
@@ -34,5 +32,11 @@ public class User {
 		this.date = date;
 	}	
 	
+	//constructor
+	public User(String email, String password,LocalDateTime date) {
+		this.email = email;
+		this.password = password;
+		this.date = date;
+	}
 	
 }
